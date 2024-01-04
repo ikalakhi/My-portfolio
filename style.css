@@ -25,7 +25,7 @@ body .container .navbar {
     justify-content: center;
     display: inline-flex;
     background-color: #202020;
-    white-space: 13px;
+    border-radius: 0.2cm;
 }
 
 body .container .navbar .linkclass {
@@ -53,6 +53,7 @@ body .container header .category {
     font-weight: bold;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
+    margin-top: 8px;
 }
 
 body .container header .info {
