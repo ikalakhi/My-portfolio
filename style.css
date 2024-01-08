@@ -90,13 +90,20 @@ body .container header .info .title {
 
 body .container header .info button {
     background-color: #181818;
-    color: #999;
+    border-width: 0.5px;
     font-size : 1.2rem;
     border-radius: 10px;
+    border: 3px solid #181818;
+}
+
+body .container header .info button:hover {
+    background-color: #202020;
 }
 
 body .container header .info button h3 {
     margin: 2px;
+    padding: 2px;
+    color: #fff;
 }
 
 body .container header .category a {
@@ -104,6 +111,28 @@ body .container header .category a {
     font-weight: bold;
     font-style: inherit;
     font-size: 1.3rem;
+}
+
+
+body .container article button {
+    background-color: #181818;
+    border-width: 0.5px;
+    font-size : 1.2rem;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 3px solid #181818;
+    margin-left: 400px;
+    padding: 20px;
+}
+
+body .container article button h3 {
+    margin: 2px;
+    padding: 2px;
+    color: #fff;
 }
 
 body .container header .info .subtitle {

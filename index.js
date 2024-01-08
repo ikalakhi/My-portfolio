@@ -4,27 +4,50 @@ const projects = document.querySelector('.projects');
 const favoriteQuote = document.querySelector('.favoriteQuote');
 const contact = document.querySelector('.contact');
 
-home.addEventListener('click', () => {
-    // alert("aboutMe");
-    window.scroll(0, 500);
-})
+const popupLink = document.getElementById("popup-link");
+const popupWindow = document.getElementById("popup-window");
+const closeButton = document.getElementById("close-button");
 
-aboutMe.addEventListener('click', () => {
-    // alert("aboutMe");
-    window.scroll(0, 500);
-})
+popupWindow.style.display = "none"; 
+popupLink.addEventListener("click", function(event) {
+  event.preventDefault();
+  popupWindow.style.display = "block";
+});
 
-projects.addEventListener('click', () => {
-    window.scroll(0, 1000);
-})
+closeButton.addEventListener("click", function() {
+  popupWindow.style.display = "none";
+});
 
-favoriteQuote.addEventListener('click', () => {
-    window.scroll(0, 1500);
-})
 
-contact.addEventListener('click', () => {
-    window.scroll(0, 2000);
-})
+// function learnMoreFunction() {
+//     const learnButton = document.getElementById("myButton");
+//     // console.log(learnButton);
+//     if(learnButton.style.display === "none") {
+//         learnButton.style.display = "block";
+//     } else {
+//         learnButton.style.display = "none";
+//     }
+// }
+
+// home.addEventListener('click', () => {
+//     window.scroll(0, 500);
+// })
+
+// aboutMe.addEventListener('click', () => {
+//     window.scroll(0, 500);
+// })
+
+// projects.addEventListener('click', () => {
+//     window.scroll(0, 1000);
+// })
+
+// favoriteQuote.addEventListener('click', () => {
+//     window.scroll(0, 1500);
+// })
+
+// contact.addEventListener('click', () => {
+//     window.scroll(0, 2000);
+// })
 
 // let scrollHeight = Math.max(
 //     document.body.scrollHeight, document.documentElement.scrollHeight,
