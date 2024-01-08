@@ -135,6 +135,11 @@ body .container article button h3 {
     color: #fff;
 }
 
+body .container article button:hover {
+    background-color: #202020;
+    margin-bottom: 10px;
+}
+
 body .container header .info .subtitle {
     min-width: 70%;
     margin: 0 auto 28px;
