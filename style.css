@@ -48,7 +48,7 @@ body .container .navbar a:focus {
 }
 
 body .container header {
-    background: url(cover.png) center / cover no-repeat;
+    background: url(media/cover.png) center / cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -265,6 +265,72 @@ body .container .projectsPage button:hover {
     background-color: #202020;
 }
 
+body .container .myContacts {
+    text-align: center;
+    display:block;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    line-height: 1.70;
+}
+
+body .container .myContacts .contacts {
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+
+body .container .myContacts a {
+    font-size: 1.2rem;
+    margin: 10px;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 3px;
+    text-decoration: underline;
+    text-decoration:dotted;
+    background-color:#999;
+    border-radius: 10px;
+}
+
+body .container .myContacts a:hover {
+    background-color:#dadada;
+    padding: 6px;
+    margin: 20px;
+}
+
+body .container .myContacts .icons {
+    margin-right: 0px;
+}
+
+body .container .myContacts img {
+    display: inline;
+    width: 50px;
+    margin: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+body .container .myContacts button {
+    background-color: #181818;
+    font-size : 1.2rem;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #181818;
+    margin-left: 450px;
+    box-shadow: 0 5px 5px rgba(75, 75, 75, 0.2);
+}
+
+body .container .myContacts button h3 {
+    margin: 2px;
+    padding: 2px;
+    color: #fff;
+}
+
+body .container .myContacts button:hover {
+    background-color: #202020;
+}
 
 @media screen and (max-width: 768px) {
     body .container header {

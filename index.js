@@ -1,15 +1,17 @@
 const home = document.querySelector('.home');
-const aboutMe = document.querySelector('.aboutMe');
-const aboutMePage = document.querySelector('.aboutMePage');
-const projects = document.querySelector('.projects');
-const favoriteQuote = document.querySelector('.favoriteQuote');
 const contact = document.querySelector('.contact');
+const aboutMe = document.querySelector('.aboutMe');
+const projects = document.querySelector('.projects');
+const aboutMePage = document.querySelector('.aboutMePage');
 const projectsPage = document.querySelector('.projectsPage');
+const favoriteQuote = document.querySelector('.favoriteQuote');
+const contactPage = document.querySelector('.myContacts');
 
 const learnMore = document.getElementById("popup-link");
-const learnMorePage = document.getElementById("popup-window");
-const closelearnMorePage = document.getElementById("close-button");
 const closeAboutme = document.getElementById("close-aboutMe");
+const learnMorePage = document.getElementById("popup-window");
+const closeContact = document.getElementById("close-contactPage");
+const closelearnMorePage = document.getElementById("close-button");
 const closeProjects = document.getElementById("close-projectsPage");
 
 //-----handling home button----
@@ -47,6 +49,16 @@ projects.addEventListener('click', (event) => {
 });
 closeProjects.addEventListener("click", function() {
   projectsPage.style.display = "none";
+});
+
+//-----handling contact button----
+contactPage.style.display = "none";
+contact.addEventListener('click', (event) => {
+  event.preventDefault();
+  contactPage.style.display = "block";
+});
+closeContact.addEventListener("click", function() {
+  contactPage.style.display = "none";
 });
 
 // favoriteQuote.addEventListener('click', () => {
