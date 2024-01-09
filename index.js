@@ -4,46 +4,50 @@ const aboutMePage = document.querySelector('.aboutMePage');
 const projects = document.querySelector('.projects');
 const favoriteQuote = document.querySelector('.favoriteQuote');
 const contact = document.querySelector('.contact');
+const projectsPage = document.querySelector('.projectsPage');
 
-const popupLink = document.getElementById("popup-link");
-const popupWindow = document.getElementById("popup-window");
-const closeButton = document.getElementById("close-button");
+const learnMore = document.getElementById("popup-link");
+const learnMorePage = document.getElementById("popup-window");
+const closelearnMorePage = document.getElementById("close-button");
 const closeAboutme = document.getElementById("close-aboutMe");
+const closeProjects = document.getElementById("close-projectsPage");
 
+//-----handling home button----
 home.addEventListener("click", () => {
-  popupWindow.style.display = "none";
+  learnMorePage.style.display = "none";
   aboutMePage.style.display = "none";
+  projectsPage.style.display = "none";
 });
 
-popupWindow.style.display = "none";
-
-popupLink.addEventListener("click", function(event) {
+//-----handling learnMore button----
+learnMorePage.style.display = "none";
+learnMore.addEventListener("click", function(event) {
   event.preventDefault();
-  popupWindow.style.display = "block";
+  learnMorePage.style.display = "block";
+});
+closelearnMorePage.addEventListener("click", function() {
+  learnMorePage.style.display = "none";
 });
 
-closeButton.addEventListener("click", function() {
-  popupWindow.style.display = "none";
-});
-
+//-----handling aboutMe button----
 aboutMePage.style.display = "none";
-
 aboutMe.addEventListener("click", function(event) {
   event.preventDefault();
   aboutMePage.style.display = "block";
 });
-
 closeAboutme.addEventListener("click", function() {
   aboutMePage.style.display = "none";
 });
 
-// home.addEventListener('click', () => {
-//     window.scroll(0, 500);
-// })
-
-// projects.addEventListener('click', () => {
-//     window.scroll(0, 1000);
-// })
+//-----handling projects button----
+projectsPage.style.display = "none";
+projects.addEventListener('click', (event) => {
+  event.preventDefault();
+  projectsPage.style.display = "block";
+});
+closeProjects.addEventListener("click", function() {
+  projectsPage.style.display = "none";
+});
 
 // favoriteQuote.addEventListener('click', () => {
 //     window.scroll(0, 1500);

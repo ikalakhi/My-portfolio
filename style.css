@@ -202,6 +202,70 @@ body .container .aboutMePage button:hover {
     background-color: #202020;
 }
 
+body .container .projectsPage {
+    margin-top: 10px;
+    padding-bottom: 20px;
+    line-height: 1.70;
+}
+
+body .container .projectsPage h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+body .container .projectsPage li {
+    font-size: 1.2rem;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+body .container .projectsPage h6 {
+    font-size: 1.03rem;
+    margin: 5px;
+}
+
+body .container .projectsPage p {
+    margin: 5px;
+}
+
+body .container .projectsPage a {
+    text-decoration:dotted;
+    background-color:#999;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px;
+}
+
+body .container .projectsPage a:hover {
+    background-color:#dadada;
+    padding: 6px;
+    margin: 10px;
+}
+
+body .container .projectsPage button {
+    background-color: #181818;
+    font-size : 1.2rem;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #181818;
+    margin-left: 450px;
+    box-shadow: 0 5px 5px rgba(75, 75, 75, 0.2);
+}
+
+body .container .projectsPage button h3 {
+    margin: 2px;
+    padding: 2px;
+    color: #fff;
+}
+
+body .container .projectsPage button:hover {
+    background-color: #202020;
+}
+
+
 @media screen and (max-width: 768px) {
     body .container header {
         padding: 10px 20px 30px;
