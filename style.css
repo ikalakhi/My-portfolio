@@ -116,17 +116,15 @@ body .container header .category a {
 
 body .container article button {
     background-color: #181818;
-    border-width: 0.5px;
     font-size : 1.2rem;
     border-radius: 10px;
     justify-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
     border: 3px solid #181818;
-    margin-left: 400px;
-    padding: 20px;
+    margin-left: 450px;
+    box-shadow: 0 5px 5px rgba(75, 75, 75, 0.2);
 }
 
 body .container article button h3 {
@@ -137,7 +135,6 @@ body .container article button h3 {
 
 body .container article button:hover {
     background-color: #202020;
-    margin-bottom: 10px;
 }
 
 body .container header .info .subtitle {
@@ -146,27 +143,7 @@ body .container header .info .subtitle {
     font-size: 1rem;
 }
 
-body .details {
-    display: flex;
-    justify-content: space-between;
-    background: rgba(0, 0, 0, 0.14);
-    margin-top: 50px;
-    padding: 20px 50px;
-    border-radius: 16px;
-    box-shadow: 0.4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(0, 0, 0, 0.68);
-}
-
-body .details .item .item-title {
-    color: #ccc;
-}
-
-body .details .item .item-text {
-    margin-top: 12px;
-    font-size: 1.5rem;
-}
-
-body article {
+.popup{
     margin-top: 50px;
     padding-bottom: 20px;
     line-height: 1.70;
@@ -189,6 +166,40 @@ body article blockquote {
     background-color: #181818;
     padding: 30px;
     border-radius: 16px;
+}
+
+body .container .aboutMePage {
+    margin-top: 10px;
+    padding-bottom: 20px;
+    line-height: 1.70;
+}
+
+body .container .aboutMePage h1{
+    text-align: center;
+    margin: 10px;
+}
+
+body .container .aboutMePage button {
+    background-color: #181818;
+    font-size : 1.2rem;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #181818;
+    margin-left: 450px;
+    box-shadow: 0 5px 5px rgba(75, 75, 75, 0.2);
+}
+
+body .container .aboutMePage button h3 {
+    margin: 2px;
+    padding: 2px;
+    color: #fff;
+}
+
+body .container .aboutMePage button:hover {
+    background-color: #202020;
 }
 
 @media screen and (max-width: 768px) {
