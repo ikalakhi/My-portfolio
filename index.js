@@ -66,7 +66,7 @@ closeProjects.addEventListener("click", function() {
 //-----handling contact button----
 contactPage.style.display = "none";
 contact.addEventListener('click', (event) => {
-  homeFunction();
+  clearPage();
   event.preventDefault();
   contactPage.style.display = "block";
 });
