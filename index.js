@@ -19,11 +19,21 @@ home.addEventListener("click", () => {
   learnMorePage.style.display = "none";
   aboutMePage.style.display = "none";
   projectsPage.style.display = "none";
+  contactPage.style.display = "none";
 });
+
+//-----to clear page after pressing any button----
+const clearPage = () => {
+  learnMorePage.style.display = "none";
+  aboutMePage.style.display = "none";
+  projectsPage.style.display = "none";
+  contactPage.style.display = "none";
+} 
 
 //-----handling learnMore button----
 learnMorePage.style.display = "none";
 learnMore.addEventListener("click", function(event) {
+  clearPage();
   event.preventDefault();
   learnMorePage.style.display = "block";
 });
@@ -34,6 +44,7 @@ closelearnMorePage.addEventListener("click", function() {
 //-----handling aboutMe button----
 aboutMePage.style.display = "none";
 aboutMe.addEventListener("click", function(event) {
+  clearPage();
   event.preventDefault();
   aboutMePage.style.display = "block";
 });
@@ -44,6 +55,7 @@ closeAboutme.addEventListener("click", function() {
 //-----handling projects button----
 projectsPage.style.display = "none";
 projects.addEventListener('click', (event) => {
+  clearPage();
   event.preventDefault();
   projectsPage.style.display = "block";
 });
@@ -54,25 +66,10 @@ closeProjects.addEventListener("click", function() {
 //-----handling contact button----
 contactPage.style.display = "none";
 contact.addEventListener('click', (event) => {
+  homeFunction();
   event.preventDefault();
   contactPage.style.display = "block";
 });
 closeContact.addEventListener("click", function() {
   contactPage.style.display = "none";
 });
-
-// favoriteQuote.addEventListener('click', () => {
-//     window.scroll(0, 1500);
-// })
-
-// contact.addEventListener('click', () => {
-//     window.scroll(0, 2000);
-// })
-
-// let scrollHeight = Math.max(
-//     document.body.scrollHeight, document.documentElement.scrollHeight,
-//     document.body.offsetHeight, document.documentElement.offsetHeight,
-//     document.body.clientHeight, document.documentElement.clientHeight
-//   );
-// alert('Full document height, with scrolled out part: ' + scrollHeight);
-
